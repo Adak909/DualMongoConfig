@@ -1,0 +1,18 @@
+spring:
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+
+  data:
+    mongodb:
+        uri: mongodb://localhost:27017/PrimaryMongoDB
+        database: PrimaryMongoDB
+        auto-index-creation: false
+
+mongodb:
+  uri: mongodb://localhost:27017/SecondaryMongoDB
+  database: SecondaryMongoDB
+  auto-index-creation: false
+
+
+    
